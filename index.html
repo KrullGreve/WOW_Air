@@ -46,19 +46,19 @@
         <article>
             <h2>Mallorca</h2>
             <img src="Images/Mallorca_street_day.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="viewModal_mallorca">VIEW</button>
             <p>READ ABOUT #MALLORCA</p>
         </article>
         <article>
             <h2>New York</h2>
             <img src="Images/NYC_times_night.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="viewModal_newYork">VIEW</button>
             <p>READ ABOUT #NEWYORK</p>
         </article>
         <article>
             <h2>Venice</h2>
             <img src="Images/Venice_canel_evening.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="viewModal_venice">VIEW</button>
             <p>READ ABOUT #VENICE</p>
         </article>
         <!--<article>
@@ -71,6 +71,27 @@
             <button>WIEW</button>
             <p>READ ABOUT #JAPAN</p>
         </article>-->
+
+        <!-- MODAL BOX SECTION START --> <!-- Inspired by https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+        <section id="myModal_mallorca" class="modal_mallorca modal">
+            <section class="modalContent_mallorca">
+                <span class="modalContent_mallorca_close">&times;</span>
+            </section>
+        </section>
+        <section id="myModal_newYork" class="modal_newYork modal">
+            <section class="modalContent_newYork">
+                <span class="modalContent_newYork_close">&times;</span>
+            </section>
+        </section>
+        <section id="myModal_venice" class="modal_venice modal">
+            <section class="modalContent_venice">
+                <span class="modalContent_venice_close">&times;</span>
+            </section>
+        </section>
+
+        <!-- MODAL BOX SECTION END -->
+
         <img class="arrowRight" src="images/arrow.png" alt="Next, right arrow icon">
         <section class="seasons">
             <section class="springIMG">
@@ -124,5 +145,6 @@
             <a href="mailto: media@wowair.com"><p>Media: media@wowair.com</p></a>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
