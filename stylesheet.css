@@ -1,0 +1,434 @@
+/* GENERAL STYLES */ 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/front.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: 100%;
+    background-color: #32CAE6;
+}
+
+/* Header */
+
+header img {
+    min-height: 13vw;
+    position: fixed;
+    z-index: 20;
+}
+
+
+header {
+    display: grid;
+    grid-area: ' . nav';
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    border-bottom: 0.6vw solid #9f1881;
+    background-color: white;
+}
+
+.mainNav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1vw;
+    list-style-type: none;
+    align-content: center;
+    justify-items: center;
+    grid-area: nav;
+    margin-top: 0.5vw;
+    padding-bottom: 1vw;
+}
+
+li a {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #9f1881;
+}
+
+/* Main */
+
+h3 {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #9f1881;
+    margin-left: 17.6vw;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    'help help booking'
+    ;
+    grid-row: auto;
+    height: 45vw;
+}
+
+.front_helpButton {
+    grid-area: help;
+    align-self: end;
+    margin-bottom: 2vw;
+}
+
+.front_helpButton img {
+    height: 20vw;
+    margin-left: 1vw;
+}
+
+.front_booking {
+    display: grid;
+    grid-area: booking;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    height: 45vw;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.002), rgba(255,255,255,1.6));
+}
+
+.highconcept { /* Flying above your expectations img */
+    height: 15vw;
+    justify-self: right;
+    margin-right: 5vw;
+}
+
+.front_booking :nth-child(6) { /* GO button */
+    height: 4vw;
+    width: 10vw;
+    justify-self: right;
+    margin-right: 11vw;
+    border-radius: 50px;
+    font-size: 5em;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    background-color: #9f1881;
+    border: none;
+}
+
+.front_booking :nth-child(7) { /* Faq Icon */
+    height: 6vw;
+    justify-self: right;
+    margin-right: 1vw;
+}
+
+.front_booking section {
+    text-align: right;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+}
+
+.front_booking section img{
+    height: 2.5vw;
+    margin: 0.2vw;
+    margin-left: 1vw;
+}
+
+.Calendar {
+    height: 2vw;
+}
+
+.inputCalendar {
+    width: 23vw;
+    height: 3vw;
+    vertical-align: top;
+}
+
+/* Destinations */
+
+h2 {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Kameron';
+    font-weight: 700;
+    font-size: 3vw;
+    color: #9f1881;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.destinations {
+    background-color: #9f1881;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.arrowLeft {
+    transform: rotate(180deg);
+    height: 5vw;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 180px;
+    align-self: center;
+    justify-self: center;
+}
+
+.arrowRight {
+    height: 5vw;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 180px;
+    align-self: center;
+    justify-self: center;
+}
+
+.destinations article {
+    background-color: white;
+    margin: 1vw;
+    text-align-last: center;
+}
+
+
+.destinations article img{
+    height: 29vw;
+    object-fit: cover;
+    width: 23vw;
+    margin: 1vw;
+}
+
+.destinations article button {
+    font-size: 2vw;
+    color: white;
+    background-color: #FFCB00;
+    border-radius: 25px;
+    height: 4vw;
+    font-weight: 900;
+    width: 8vw;
+    text-align-last: center;
+    margin-bottom: 1vw;
+    border: none;
+}
+
+.destinations article p {
+    margin: 1vw;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 800;
+}
+
+.destinations section img {
+    height: 4.5vw;
+    margin-top: 2vw;
+}
+
+.seasons {
+    grid-area: 2 / span 5;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seasons section {
+    width: 6vw;
+    height: 7vw;
+    text-align-last: center;
+}
+
+.springIMG {
+    background-color: #568CC3;
+    border-radius: 50px 50px 0 0;
+}
+
+/* flower of instagram pics */
+
+.flowerWrapper {
+    height: 75vw;
+}
+
+.flower {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 26px;
+        
+}
+
+.flower :nth-child(1) {
+    z-index: 2;
+    object-fit: contain;
+}
+
+.flower img {
+    height: 36vw;
+    object-fit: cover;
+    width: 16vw;
+    margin: 1vw;
+    position: absolute;
+    left: 41%;
+    margin-top: 19vw;
+}
+
+.one {
+    transform: rotateZ(342deg) translateX(0em) translateY(-9em);
+}
+
+.two {
+    transform: rotateZ(306deg) translateX(0em) translateY(-9em);
+}
+
+.three {
+    transform: rotateZ(270deg) translateX(0em) translateY(-9em);
+}
+
+.four {
+    transform: rotateZ(234deg) translateX(0em) translateY(-9em);
+}
+
+.five {
+    transform: rotateZ(198deg) translateX(0em) translateY(-9em);
+}
+
+.six {
+    transform: rotateZ(162deg) translateX(0em) translateY(-9em);
+}
+
+.seven {
+    transform: rotateZ(126deg) translateX(0em) translateY(-9em);
+}
+
+.eight {
+    transform: rotateZ(90deg) translateX(0em) translateY(-9em);
+}
+
+.nine {
+    transform: rotateZ(54deg) translateX(0em) translateY(-9em);
+}
+
+.ten {
+    transform: rotateZ(18deg) translateX(0em) translateY(-9em);
+}
+
+@media (max-width: 1275px) {
+
+    .flower img {
+        margin-top: 22vw;
+    }
+    .flowerWrapper {
+        height: 80vw;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .flower {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        height: auto;
+    }
+
+    .flower img{
+        position: relative;
+        transform: rotateZ(0deg) translateX(0em) translateY(0em);
+        margin-top: 1vw;
+        left: 0;
+    }
+
+    .flower :nth-child(1) {
+        position: absolute;
+        transform: translateY(19vw) translateX(39.2vw);
+    }
+}
+
+/* Footer */
+
+.honestFares {
+    grid-area: a;
+    display: flex;
+    margin-top: 3vw;
+}
+
+.honestFares img {
+    width: 17vw;
+}
+
+.honestFares p {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-size: 2.3vw;
+    font-weight: bolder;
+    color: black;
+    margin: 1.7vw;
+}
+
+.socialMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: b;
+}
+
+.followUs {
+    grid-area: 1 / span 4;
+    width: 27vw;
+    justify-self: center;
+}
+
+.socialMedia section {
+    grid-area: 2 / span 4;
+    margin-left: 11vw;
+}
+
+.socialMediaIcon {
+    width: 6vw;
+    justify-self: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.contactList {
+    grid-area: c;
+    height: 24vw;
+    text-align: center;
+    background-color: #991782;
+    border-radius: 30px;
+    justify-self: center;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+h4 {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-size: 2.4vw;
+    color: white;
+    margin: 3vw;
+}
+
+.contactList a{
+    text-decoration: none;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-size: 1.4vw;
+    color: white;
+}
+
+footer{
+    display: grid;
+    background-color: white;
+    grid-template-areas: 
+            "a a a"
+            "b b c"
+            "b b c";
+}
+
+footer img {
+    width: 4vw;
+}
+
+.contactList a p{
+    margin: 1vw;
+}

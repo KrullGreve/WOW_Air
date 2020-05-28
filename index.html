@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><img src="Images/wowairlogo.svg"></img>WOW air</title>
+    <title>WOW air</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/wowairlogo.svg" alt="WOW air logo">
-        <ul>
+        <a href="https://wowair.com/"><img src="images/wowairlogo.svg" alt="WOW air logo"></a>
+        <ul class="mainNav">
             <li><a href="https://wowair.com/news">News</a></li>
             <li><a href="https://wowair.com/about">About WOW</a></li>
             <li><a href="https://wowair.com/cargo">Cargo</a></li>
@@ -17,39 +21,47 @@
         </ul>
     </header>
     <main>
-        <section>
+        <section class=front_helpButton>
             <img src="images/help.png" alt="Need Help button">
         </section>
-        <section>
-            <img src="images/highconcept.png" alt="Flying above your expectations">
+        <section class="front_booking">
+            <img class="highconcept" src="images/highconcept.png" alt="Flying above your expectations">
             <h3>From</h3>
-            <input type="text">
-            <img src="Images/calendar.svg" alt="Calander Icon">
+                <section>
+                    <input class="inputCalendar" type="text">
+                    <img src="Images/calendar.svg" alt="Calendar Icon">
+                </section>
             <h3>To</h3>
-            <input type="text">
-            <img src="Images/calendar.svg" alt="Calander Icon">
+                <section>
+                    <input class="inputCalendar" type="text">
+                    <img src="Images/calendar.svg" alt="Calendar Icon">
+                </section>
             <button>GO</button>
             <img src="images/faq.png" alt="faq Icon">
         </section>
     </main>
-    <section>
+    <section class="destinations">
         <!-- Chance Caps in P with Css -->
+        <img class="arrowLeft" src="images/arrow.png" alt="Next, left arrow icon">
         <article>
             <h2>Mallorca</h2>
+            <img src="Images/Mallorca_street_day.jpeg" alt="">
             <button>VIEW</button>
             <p>READ ABOUT #MALLORCA</p>
         </article>
         <article>
             <h2>New York</h2>
+            <img src="Images/NYC_times_night.jpeg" alt="">
             <button>VIEW</button>
             <p>READ ABOUT #NEWYORK</p>
         </article>
         <article>
             <h2>Venice</h2>
+            <img src="Images/Venice_canel_evening.jpeg" alt="">
             <button>VIEW</button>
             <p>READ ABOUT #VENICE</p>
         </article>
-        <article>
+        <!--<article>
             <h2>Iceland</h2>
             <button>VIEW</button>
             <p>READ ABOUT #ICELAND</p>
@@ -58,40 +70,54 @@
             <h2>Japan</h2>
             <button>WIEW</button>
             <p>READ ABOUT #JAPAN</p>
-        </article>
-        <section>
-            <img src="Images/spring.svg" alt="Spring Icon">
-            <img src="Images/summer.svg" alt="Summer Icon">
-            <img src="Images/fall.svg" alt="Fall Icon">
-            <img src="Images/winter.svg" alt="Winter">
+        </article>-->
+        <img class="arrowRight" src="images/arrow.png" alt="Next, right arrow icon">
+        <section class="seasons">
+            <section class="springIMG">
+                <img src="Images/springPNG.png" alt="Spring Icon">
+            </section>
+            <section>    
+                <img src="Images/summer.svg" alt="Summer Icon">
+            </section>
+            <section>
+                <img src="Images/fall.svg" alt="Fall Icon">
+            </section>
+            <section>
+                <img src="Images/winter.svg" alt="Winter">
+            </section>
         </section>
     </section>
-    <article> <!-- Giv kun article en class og brug child til at lave blomsten -->
+    <section class="flowerWrapper">
+        <article class="flower"> <!-- Giv kun article en class og brug child til at lave blomsten -->
                 <!-- Skal have set om det er muligt at tage billederne fra instagram via Java -->
-        <img src="Images/wearewow.png" alt="Flower of images We are # WOW">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/54277680_280926306136899_2754670401762663030_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=cDKzPmlIRfgAX-3tUvl&oh=2d64bafb56c4b76f28d9e2f6cbcf937f&oe=5EF99717" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/54512436_2004432209859746_362994106185530134_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=T0rHJ1eoxz4AX-Ki_tG&oh=7c011e9abefd2b3e09797bcf115cce26&oe=5EF97F10" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/53364416_436100957130938_500200061342280223_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=tuYl7w9KKDUAX-E7O7D&oh=e4b8cbe371a3b77d768e51e46355eb9d&oe=5EF7CD2A" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53364427_396140084512407_6380731033905586024_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=_gO_Of9QwVkAX95qo_n&oh=6b4bc577372e2f6b8f243fc2978bb7d8&oe=5EF9A385" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/51877589_1163023937202645_8190783949689835558_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=7kIR_-SqsJkAX9ahsV4&oh=d1092115a1535fc1d191da718efb57df&oe=5EF9C866" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53603378_2637223596294809_8043648096187231533_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=105&_nc_ohc=1oxFaTgKo68AX-xqaCn&oh=dfa72310d47206b47b3458b59e74e370&oe=5EF8D271" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/52920080_337094723589640_5292431902204673643_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=71tCcK6pmhIAX90Q4CE&oh=392deece9762ab5070ddf8051fbc9397&oe=5EF87C17" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/53702524_642240282889992_5058894058803199948_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=100&_nc_ohc=tfY2uFAk8WwAX9_MfnU&oh=0ec8f9db510e273b8b4bb264a2077794&oe=5EF76834" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/52875470_754936781574027_2500913937639505904_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=2ytmN0QAXEkAX_wBgCC&oh=5c99e1e3e84a35b7ceda3969416ec609&oe=5EF637E2" alt="">
-        <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53729361_337204480252522_8381516473115189994_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=110&_nc_ohc=N-2NK1FxnisAX-OBzM4&oh=086aa158d32e73158ecd07888fae0855&oe=5EF6C3D0" alt="">
-    </article>
+            <img src="Images/wearewow.png" alt="Flower of images We are # WOW">
+            <img class="flowerImage one" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/54277680_280926306136899_2754670401762663030_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=cDKzPmlIRfgAX-3tUvl&oh=2d64bafb56c4b76f28d9e2f6cbcf937f&oe=5EF99717" alt="">
+            <img class="flowerImage two" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/54512436_2004432209859746_362994106185530134_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=T0rHJ1eoxz4AX-Ki_tG&oh=7c011e9abefd2b3e09797bcf115cce26&oe=5EF97F10" alt="">
+            <img class="flowerImage three" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/53364416_436100957130938_500200061342280223_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=tuYl7w9KKDUAX-E7O7D&oh=e4b8cbe371a3b77d768e51e46355eb9d&oe=5EF7CD2A" alt="">
+            <img class="flowerImage four" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53364427_396140084512407_6380731033905586024_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=_gO_Of9QwVkAX95qo_n&oh=6b4bc577372e2f6b8f243fc2978bb7d8&oe=5EF9A385" alt="">
+            <img class="flowerImage five" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/51877589_1163023937202645_8190783949689835558_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=7kIR_-SqsJkAX9ahsV4&oh=d1092115a1535fc1d191da718efb57df&oe=5EF9C866" alt="">
+            <img class="flowerImage six" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53603378_2637223596294809_8043648096187231533_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=105&_nc_ohc=1oxFaTgKo68AX-xqaCn&oh=dfa72310d47206b47b3458b59e74e370&oe=5EF8D271" alt="">
+            <img class="flowerImage seven" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/52920080_337094723589640_5292431902204673643_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=71tCcK6pmhIAX90Q4CE&oh=392deece9762ab5070ddf8051fbc9397&oe=5EF87C17" alt="">
+            <img class="flowerImage eight" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/53702524_642240282889992_5058894058803199948_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=100&_nc_ohc=tfY2uFAk8WwAX9_MfnU&oh=0ec8f9db510e273b8b4bb264a2077794&oe=5EF76834" alt="">
+            <img class="flowerImage nine" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/52875470_754936781574027_2500913937639505904_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=2ytmN0QAXEkAX_wBgCC&oh=5c99e1e3e84a35b7ceda3969416ec609&oe=5EF637E2" alt="">
+            <img class="flowerImage ten" src="https://scontent-cph2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/53729361_337204480252522_8381516473115189994_n.jpg?_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=110&_nc_ohc=N-2NK1FxnisAX-OBzM4&oh=086aa158d32e73158ecd07888fae0855&oe=5EF6C3D0" alt="">
+        </article>
+    </section>
     <footer>
-        <section>
+        <section class="honestFares">
             <img src="images/check.png" alt="Check Icon">
+            <p>WOW fares are honest, this means you know exactly what you get when you purchase tickets with us. They include all the basics one expects at an honest price.</p>
         </section>
-        <section>
-            <img src="Images/followushere.png" alt="Follow us here">
-            <img src="Images/instagram.svg" alt="instagram icon">
-            <img src="Images/facebook.svg" alt="facebook icon">
-            <img src="Images/linkedin.svg" alt="linkedin icon">
-            <img src="Images/twitter.svg" alt="twitter icon">
+        <section class="socialMedia">
+            <img class="followUs" src="Images/followushere.png" alt="Follow us here">
+            <section>
+                <a href="https://www.instagram.com/wowair"><img class="socialMediaIcon instagram" src="Images/instagram.svg" alt="instagram icon"></a>
+                <a href="https://www.facebook.com/wowiceland"><img class="socialMediaIcon facebook" src="Images/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com/company/wow-air"><img class="socialMediaIcon linkein" src="Images/linkedin.svg" alt="linkedin icon"></a>
+                <a href="https://twitter.com/wow_air"><img class="socialMediaIcon twitter" src="Images/twitter.svg" alt="twitter icon"></a>
+            </section>
         </section>
-        <section>
+        <section class="contactList">
             <h4>#honestfares</h4>
             <a href="mailto: wowair@wowair.com"><p>Guests: wowair@wowair.com</p></a>
             <a href="mailto: wowaircargo@wowaircargo.com"><p>Cargo: wowaircargo@wowaircargo.com</p></a>
