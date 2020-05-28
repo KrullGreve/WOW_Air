@@ -387,6 +387,11 @@ h2 {
     margin-bottom: 1vw;
     margin-top: 1vw;
     margin-left: 2vw;
+    transition: all .2s ease-in-out;
+}
+
+.socialMediaIcon:hover {
+    transform: scale(1.2);
 }
 
 .contactList {
