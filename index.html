@@ -46,19 +46,19 @@
         <article>
             <h2>Mallorca</h2>
             <img src="Images/Mallorca_street_day.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="modal_mallorca_open">VIEW</button>
             <p>READ ABOUT #MALLORCA</p>
         </article>
         <article>
             <h2>New York</h2>
             <img src="Images/NYC_times_night.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="modal_newYork_open">VIEW</button>
             <p>READ ABOUT #NEWYORK</p>
         </article>
         <article>
             <h2>Venice</h2>
             <img src="Images/Venice_canel_evening.jpeg" alt="">
-            <button>VIEW</button>
+            <button id="modal_venice_open">VIEW</button>
             <p>READ ABOUT #VENICE</p>
         </article>
         <!--<article>
@@ -71,6 +71,7 @@
             <button>WIEW</button>
             <p>READ ABOUT #JAPAN</p>
         </article>-->
+
         <img class="arrowRight" src="Images/arrow.png" alt="Next, right arrow icon">
         <section class="seasons">
             <section class="springIMG">
@@ -87,6 +88,33 @@
             </section>
         </section>
     </section>
+
+        <!-- MODAL BOXES START -->
+
+
+        <div id="my_modal_mallorca" class="modal_mallorca modal">
+            <section class="modal_mallorca_content">
+                <span class="modal_mallorca_close">&times;</span>
+                <em>hello</em>
+            </section>
+        </div>
+
+        <div id="my_modal_newYork" class="modal_newYork modal">
+            <section class="modal_newYork_content">
+                <span class="modal_newYork_close">&times;</span>
+                <em>hello</em>
+            </section>
+        </div>
+
+        <div id="my_modal_venice" class="modal_venice modal">
+            <section class="modal_venice_content">
+                <span class="modal_venice_close">&times;</span>
+                <em>hello</em>
+            </section>
+        </div>
+    
+        <!-- MODAL BOXES END -->
+
     <section class="flowerWrapper">
         <article class="flower"> <!-- Giv kun article en class og brug child til at lave blomsten -->
                 <!-- Skal have set om det er muligt at tage billederne fra instagram via Java -->
@@ -124,5 +152,6 @@
             <a href="mailto: media@wowair.com"><p>Media: media@wowair.com</p></a>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
