@@ -187,8 +187,72 @@ h2 {
     text-align-last: center;
 }
 
+.modal_content {
+    display: grid;
+    text-align: -webkit-center;
+}
 
-.destinations article img{
+.close_button {
+    text-align: end;
+    margin-top: 2vw;
+    margin-right: 4vw;
+}
+
+.modal_content :nth-child(2) {
+    font-size: 7vw;
+}
+
+.modal_content :nth-child(3) {
+    width: 40vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.modal_content :nth-child(4) {
+    margin: 1vw;
+    width: 30vw;
+}
+
+.modal_content section{
+    display: flex;
+    justify-content: space-around;
+    margin: 1vw;
+    margin-left: 12vw;
+}
+
+.modal_content section :nth-child(1) {
+    height: 6vw;
+    width: 16vw;
+    justify-self: right;
+    margin-right: 11vw;
+    border-radius: 50px;
+    font-size: 5em;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    background-color: #9f1881;
+    border: none;
+}
+
+.modal_content section :nth-child(2) {
+    height: 6vw;
+    width: 16vw;
+    justify-self: right;
+    margin-right: 11vw;
+    border-radius: 50px;
+    font-size: 5em;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    background-color: #32CAE6;
+    border: none;
+}
+
+.destinations article img {
     height: 29vw;
     object-fit: cover;
     width: 23vw;
@@ -212,6 +276,8 @@ h2 {
     margin: 1vw;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
 }
 
 .destinations section img {
@@ -255,7 +321,7 @@ h2 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 20; /* Sit on top */
-    padding-top: 3em; /* Location of the box */
+    padding-top: 1em; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -268,9 +334,10 @@ h2 {
 .modal_mallorca_content, .modal_newYork_content, .modal_venice_content {
     background-color: #fefefe;
     margin: 0 auto;
-    padding: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
     border: 1px solid #888;
-    width: 90%;
+    width: 75%;
     align-content: center;
 }
 
