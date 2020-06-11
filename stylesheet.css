@@ -17,6 +17,10 @@ body {
 
 /* Header */
 
+.hidden {
+    display: none;
+}
+
 header img {
     min-height: 13vw;
     position: fixed;
