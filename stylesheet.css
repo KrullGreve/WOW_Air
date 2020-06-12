@@ -192,18 +192,18 @@ h2 {
 }
 
 .modal_content {
-    display: grid;
     text-align: -webkit-center;
 }
 
 .close_button {
     text-align: end;
-    margin-top: 2vw;
-    margin-right: 4vw;
+    margin-top: 3vw;
+    margin-right: 2vw;
 }
 
 .modal_content :nth-child(2) {
     font-size: 7vw;
+    margin-left: 3vw;
 }
 
 .modal_content :nth-child(3) {
@@ -219,16 +219,14 @@ h2 {
 
 .modal_content section{
     display: flex;
-    justify-content: space-around;
-    margin: 1vw;
-    margin-left: 12vw;
+    justify-content: center;
+    margin-bottom: 2vw;
 }
 
 .modal_content section :nth-child(1) {
     height: 6vw;
     width: 16vw;
     justify-self: right;
-    margin-right: 11vw;
     border-radius: 50px;
     font-size: 5em;
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -244,7 +242,6 @@ h2 {
     height: 6vw;
     width: 16vw;
     justify-self: right;
-    margin-right: 11vw;
     border-radius: 50px;
     font-size: 5em;
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -280,7 +277,7 @@ h2 {
     margin: 1vw;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 1.3vw;
     text-align: center;
 }
 
