@@ -1,7 +1,7 @@
 // Inspired by https://www.w3schools.com/howto/howto_css_modals.asp
 
         // Get the sign up modal (the only one that works with let (or const))
-        let modal_mallorca = document.getElementById("my_modal_mallorca");
+        var modal_mallorca = document.getElementById("my_modal_mallorca");
 
         // Sign up button that opens the modal
         var btn = document.getElementById("modal_mallorca_open");
@@ -22,7 +22,7 @@
 
 
         // Get the sign up modal (the only one that works with let (or const))
-        let modal_newYork = document.getElementById("my_modal_newYork");
+        var modal_newYork = document.getElementById("my_modal_newYork");
 
         // Sign up button that opens the modal
         var btn = document.getElementById("modal_newYork_open");
@@ -42,7 +42,7 @@
 
 
         // Get the sign up modal (the only one that works with let (or const))
-        let modal_venice = document.getElementById("my_modal_venice");
+        var modal_venice = document.getElementById("my_modal_venice");
 
         // Sign up button that opens the modal 
         var btn = document.getElementById("modal_venice_open");
