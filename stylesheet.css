@@ -30,7 +30,6 @@ header img {
 
 header {
     display: grid;
-    grid-area: ' . nav';
     grid-auto-rows: auto;
     grid-gap: 1em;
     border-bottom: 0.6vw solid #9f1881;
@@ -192,7 +191,7 @@ h2 {
 }
 
 .modal_content {
-    text-align: -webkit-center;
+    text-align: center;
 }
 
 .close_button {

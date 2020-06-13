@@ -12,12 +12,12 @@
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
         modal_mallorca.style.display = "block";
-        }
+        };
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
         modal_mallorca.style.display = "none";
-        }
+        };
 
 
 
@@ -33,12 +33,12 @@
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
         modal_newYork.style.display = "block";
-        }
+        };
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
         modal_newYork.style.display = "none";
-        }
+        };
 
 
         // Get the sign up modal (the only one that works with let (or const))
@@ -53,12 +53,12 @@
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
         modal_venice.style.display = "block";
-        }
+        };
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
         modal_venice.style.display = "none";
-        }
+        };
 
         
         // When the user clicks anywhere outside of the modal, close it
